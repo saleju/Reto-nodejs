@@ -105,7 +105,7 @@ router.put('/icfes-actualizar', (req, res) => {
     )
 });
 
-//eliminar POST
+//eliminar con POST
 router.post("/icfes-eliminar/:id", (req, res)=> {
     let params = req.params;
     IcfesSchema.deleteOne({ 'idIcfes': params.id}, {
@@ -128,7 +128,7 @@ router.post("/icfes-eliminar/:id", (req, res)=> {
     )
 });
 
-//eliminar DEL
+//eliminar con DEL
 router.delete("/icfes-eliminar/:id", (req, res)=> {
     let params = req.params;
     IcfesSchema.deleteOne({ 'idIcfes': params.id}, {

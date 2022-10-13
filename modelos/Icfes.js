@@ -18,4 +18,4 @@ let IcfesSchema = new mongoose.Schema({
     colegiogrado: String,
 });
 
-module.exports = mongoose.model('icfes', IcfesSchema, 'Pruebas');
+module.exports = mongoose.model('icfes', IcfesSchema, 'Icfes1');
